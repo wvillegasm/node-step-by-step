@@ -1,0 +1,33 @@
+{
+  "name": "node-step-by-step",
+  "version": "1.0.0",
+  "description": "Project to share knowledge with a group of study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wvillegasm/node-step-by-step.git"
+  },
+  "keywords": [
+    "node.js",
+    "course",
+    "learning",
+    "proof of concept"
+  ],
+  "author": "Wilfredo Villegas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wvillegasm/node-step-by-step/issues"
+  },
+  "homepage": "https://github.com/wvillegasm/node-step-by-step#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "responsimple": "^1.0.1"
+  }
+}
