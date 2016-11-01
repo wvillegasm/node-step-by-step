@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 const
     gulp = require('gulp'),
     pug = require('gulp-pug'),
