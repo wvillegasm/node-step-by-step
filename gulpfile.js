@@ -2,6 +2,7 @@
 const
     gulp = require('gulp'),
     pug = require('gulp-pug'),
+    babel = require('gulp-babel'),
     dir = {
         src: 'src',
         dist: 'dist',
@@ -32,6 +33,9 @@ const
                 title: 'Node.js course',
                 files: files
             }
+        },
+        es6: {
+            presets: ['es2015']
         }
     };
 
@@ -42,4 +46,11 @@ gulp.task('pug', ()=> {
         .pipe(pug(opts.pug))
         .pipe(gulp.dest(dir.dist));
 
+});
+
+gulp.task('es6', ()=>{
+    gulp
+        .src(`${dir.src}/es6/*.js`)
+        .pipe(babel(opts.es6)).
+        pipe
 });
