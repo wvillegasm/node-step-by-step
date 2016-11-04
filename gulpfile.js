@@ -48,9 +48,14 @@ gulp.task('pug', ()=> {
 
 });
 
-gulp.task('es6', ()=>{
-    gulp
-        .src(`${dir.src}/es6/*.js`)
-        .pipe(babel(opts.es6)).
-        pipe
+gulp.task('sass', ()=> {
+    gulp.src(`${dir.src}/scss/*.scss`)
+        .pipe(sass(opts.sass))
+        .pipe(gulp.dest(`${dir.dist}/css`));
+});
+
+gulp.task('es6', ()=> {
+    gulp.src(`${dir.src}/es6/*.js`)
+        .pipe(babel(opts.es6))
+        .pipe(gulp.dest(`${dir.dist}/js`));
 });
