@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "gulp pug",
     "sass": "gulp sass",
-    "es6": "gulp es6"
+    "es6": "gulp es6",
+    "watch:pug": "onchange \".src/pug/**\" -- npm run pug",
+    "watch:sass": "onchange \".src/scss/**\" -- npm run sass",
+    "watch:es6": "onchange \".src/es6/**\" -- npm run es6",
+    "build:dev": "npm run pug && npm run sass && npm run es6"
   },
   "repository": {
     "type": "git",
