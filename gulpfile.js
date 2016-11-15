@@ -74,7 +74,7 @@ gulp.task('img', ()=> {
         .pipe(gulp.dest(`${dir.dist}/img`));
 });
 
-gulp.task('img', ()=> {
+gulp.task('webp', ()=> {
     gulp.src(`${dir.src}/img/*.+(png|jpeg|jpg)`)
         .pipe(webp())
         .pipe(gulp.dest(`${dir.dist}/img`));
