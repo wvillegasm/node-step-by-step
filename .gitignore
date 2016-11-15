@@ -144,3 +144,4 @@ fabric.properties
 .gitignore
 .idea/
 .jshintrc
+dist/
